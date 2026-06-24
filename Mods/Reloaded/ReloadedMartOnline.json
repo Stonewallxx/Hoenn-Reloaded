@@ -175,7 +175,8 @@
       "name": "Online - Default",
       "firesale_items": [3],
       "prices": {
-        "3": [5, 0]
+        "3": [5, 0],
+        "68": [5, 2000]
       },
       "currencies": {},
       "disabled_categories": ["tms"],
