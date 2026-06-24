@@ -174,15 +174,10 @@
     {
       "name": "Online - Default",
       "firesale_items": [3],
-      "prices": {
-        "3": [5, 0],
-        "68": [5, 2000]
-      },
+      "prices": {},
       "currencies": {},
-      "disabled_categories": ["tms"],
-      "firesale_prices": {
-        "3": [700, 350]
-      },
+      "disabled_categories": [],
+      "firesale_prices": {},
       "item_currencies": {
         "3": "pokeDollars"
       }
