@@ -174,7 +174,9 @@
     {
       "name": "Online - Default",
       "firesale_items": [3],
-      "prices": {},
+      "prices": {
+        "3": [50, 350]
+      },
       "currencies": {},
       "disabled_categories": [],
       "firesale_prices": {},
