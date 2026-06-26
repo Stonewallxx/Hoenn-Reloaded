@@ -1,6 +1,6 @@
 {
   "active_preset": "Online - Default",
-  "featured_items": [3, 598],
+  "featured_items": [3, 598, 445],
   "presets": [
     {
       "name": "Default",
@@ -175,7 +175,8 @@
       "name": "Online - Default",
       "firesale_items": [3],
       "prices": {
-        "3": [600, 300]
+        "3": [600, 300],
+        "445": [40, 10]
       },
       "currencies": {},
       "disabled_categories": [],
@@ -187,7 +188,7 @@
         {
           "id": "test",
           "name": "Test",
-          "category": "ITEMS",
+          "category": "FEATURED",
           "price": 1000,
           "items": [
             {
