@@ -1,6 +1,6 @@
 {
   "active_preset": "Online - Default",
-  "featured_items": [3, 245],
+  "featured_items": [3],
   "presets": [
     {
       "name": "Default",
@@ -175,8 +175,7 @@
       "name": "Online - Default",
       "firesale_items": [3],
       "prices": {
-        "3": [600, 300],
-        "245": [1500, 600]
+        "3": [600, 300]
       },
       "currencies": {},
       "disabled_categories": [],
