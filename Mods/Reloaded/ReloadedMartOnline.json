@@ -1,6 +1,6 @@
 {
   "active_preset": "Online - Default",
-  "featured_items": [3],
+  "featured_items": [3, 245],
   "presets": [
     {
       "name": "Default",
@@ -175,14 +175,33 @@
       "name": "Online - Default",
       "firesale_items": [3],
       "prices": {
-        "3": [600, 300]
+        "3": [600, 300],
+        "245": [1500, 600]
       },
       "currencies": {},
       "disabled_categories": [],
       "firesale_prices": {},
       "item_currencies": {
         "3": "pokeDollars"
-      }
+      },
+      "bundles": [
+        {
+          "id": "test",
+          "name": "Test",
+          "category": "BUNDLES",
+          "price": 1000,
+          "items": [
+            {
+              "id": 217,
+              "qty": 10
+            },
+            {
+              "id": 224,
+              "qty": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
