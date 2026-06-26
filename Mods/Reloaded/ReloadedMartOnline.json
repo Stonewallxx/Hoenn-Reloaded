@@ -228,6 +228,13 @@
           "stock": 1,
           "gift": true
         }
+      ],
+      "timed_items": [
+        {
+          "id": 598,
+          "available_from": "06-26-26 1200",
+          "available_until": "06-26-26 1500"
+        }
       ]
     }
   ]
