@@ -188,7 +188,7 @@
         {
           "id": "test",
           "name": "Test",
-          "category": "BUNDLES",
+          "category": "ITEMS",
           "price": 1000,
           "items": [
             {
@@ -198,6 +198,14 @@
             {
               "id": 224,
               "qty": 3
+            },
+            {
+              "id": 195,
+              "qty": 1
+            },
+            {
+              "id": 665,
+              "qty": 2
             }
           ]
         }
