@@ -207,7 +207,25 @@
               "id": 665,
               "qty": 2
             }
-          ]
+          ],
+          "gift": false
+        },
+        {
+          "id": "grand_release",
+          "name": "Grand Release",
+          "category": "BUNDLES",
+          "price": 0,
+          "items": [
+            {
+              "id": 78,
+              "qty": 1
+            },
+            {
+              "id": 219,
+              "qty": 5
+            }
+          ],
+          "stock": 1
         }
       ]
     }
