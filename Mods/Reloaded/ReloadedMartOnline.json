@@ -1,6 +1,15 @@
 {
-  "active_preset": "Online - Default",
-  "featured_items": [3, 598, 445],
+  "active_preset": "Routine",
+  "special_categories": [
+    {
+      "id": "featured",
+      "name": "FEATURED",
+      "items": [3],
+      "prices": {},
+      "item_stock": {},
+      "item_currencies": {}
+    }
+  ],
   "presets": [
     {
       "name": "Default",
@@ -172,72 +181,94 @@
       ]
     },
     {
-      "name": "Online - Default",
-      "firesale_items": [3],
-      "prices": {
-        "445": [40, 10],
-        "3": [0, 1000]
-      },
+      "name": "Routine",
+      "firesale_items": [],
+      "prices": {},
       "currencies": {},
       "disabled_categories": [],
-      "firesale_prices": {},
-      "item_currencies": {
-        "3": "pokeDollars"
+      "items": [
+        3,
+        68,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        114,
+        115,
+        116,
+        100,
+        194,
+        568,
+        569,
+        570,
+        235,
+        263,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        264,
+        623,
+        303,
+        314,
+        329,
+        335,
+        343,
+        345,
+        346,
+        356,
+        358,
+        367,
+        371,
+        618,
+        619,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        657,
+        120998
+      ],
+      "item_stock": {
+        "3": 50
       },
       "bundles": [
         {
-          "id": "test",
-          "name": "Test",
-          "category": "FEATURED",
-          "price": 1000,
+          "id": "grand_opening",
+          "name": "Grand Opening",
+          "category": "BUNDLES",
+          "price": 500,
           "items": [
             {
               "id": 217,
+              "qty": 5
+            },
+            {
+              "id": 267,
               "qty": 10
             },
             {
-              "id": 224,
-              "qty": 3
-            },
-            {
-              "id": 195,
+              "id": 77,
               "qty": 1
-            },
-            {
-              "id": 665,
-              "qty": 2
-            }
-          ],
-          "gift": false
-        },
-        {
-          "id": "grand_release",
-          "name": "Grand Release",
-          "category": "BUNDLES",
-          "price": 0,
-          "items": [
-            {
-              "id": 78,
-              "qty": 1
-            },
-            {
-              "id": 219,
-              "qty": 5
             }
           ],
           "stock": 1,
           "gift": true
         }
       ],
-      "timed_items": [
-        {
-          "id": 598,
-          "available_from": "06-26-26 12:57",
-          "available_until": "06-26-26 18:57"
-        }
-      ],
       "banner_active": true,
-      "banner_text": "FIRE SALE"
+      "banner_text": "GRAND OPENING!"
     }
   ]
 }
