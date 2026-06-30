@@ -4,9 +4,13 @@
     {
       "id": "featured",
       "name": "FEATURED",
-      "items": [3],
-      "prices": {},
-      "item_stock": {},
+      "items": [3, 221],
+      "prices": {
+        "221": [2500, 1500]
+      },
+      "item_stock": {
+        "221": 5
+      },
       "item_currencies": {}
     }
   ],
@@ -264,10 +268,38 @@
           ],
           "stock": 1,
           "gift": true
+        },
+        {
+          "id": "potion_bundle",
+          "name": "Potion Bundle",
+          "category": "BUNDLES",
+          "price": 1000,
+          "items": [
+            {
+              "id": 217,
+              "qty": 10
+            },
+            {
+              "id": 218,
+              "qty": 3
+            },
+            {
+              "id": 220,
+              "qty": 1
+            }
+          ],
+          "stock": 1
         }
       ],
       "banner_active": true,
-      "banner_text": "GRAND OPENING!"
+      "banner_text": "GRAND OPENING!",
+      "timed_items": [
+        {
+          "id": 221,
+          "available_from": "06-29-26 23:37",
+          "available_until": "06-30-26 04:37"
+        }
+      ]
     }
   ]
 }
