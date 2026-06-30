@@ -268,7 +268,8 @@
             }
           ],
           "stock": 1,
-          "gift": true
+          "gift": true,
+          "available_until": "01-01-99"
         }
       ],
       "banner_active": true,
