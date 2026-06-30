@@ -4,12 +4,13 @@
     {
       "id": "featured",
       "name": "FEATURED",
-      "items": [3, 221],
+      "items": [3, 221, 676],
       "prices": {
-        "221": [2500, 1500]
+        "221": [2500, 1500],
+        "676": [500, 150]
       },
       "item_stock": {
-        "221": 5
+        "221": 0
       },
       "item_currencies": {}
     }
@@ -248,8 +249,8 @@
       },
       "bundles": [
         {
-          "id": "grand_opening",
-          "name": "Grand Opening",
+          "id": "release",
+          "name": "Release",
           "category": "BUNDLES",
           "price": 500,
           "items": [
@@ -268,27 +269,6 @@
           ],
           "stock": 1,
           "gift": true
-        },
-        {
-          "id": "potion_bundle",
-          "name": "Potion Bundle",
-          "category": "BUNDLES",
-          "price": 1000,
-          "items": [
-            {
-              "id": 217,
-              "qty": 10
-            },
-            {
-              "id": 218,
-              "qty": 3
-            },
-            {
-              "id": 220,
-              "qty": 1
-            }
-          ],
-          "stock": 1
         }
       ],
       "banner_active": true,
