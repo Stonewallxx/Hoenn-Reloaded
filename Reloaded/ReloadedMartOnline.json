@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.04.26",
-  "generated_at": "2026-07-05 02:00:50 AM -0400",
+  "generated_at": "2026-07-05 04:48:06 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -264,6 +264,58 @@
       "sell_price": 0,
       "description": "
 This is just a regular test bundle to use and see if it's working properly."
+    },
+    {
+      "id": "gift",
+      "kind": "gift",
+      "name": "Grand Opening!",
+      "category": "bundles",
+      "category_id": "bundles",
+      "category_ids": [
+        "bundles"
+      ],
+      "tags": [
+        "gift"
+      ],
+      "price": 0,
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {},
+      "limits": {
+        "one_time": true
+      },
+      "display": {
+        "box_image": "gift"
+      },
+      "dependencies": {},
+      "category_name": "BUNDLES",
+      "grants": [
+        {
+          "item": "TM115",
+          "quantity": 1
+        },
+        {
+          "item": "FRESHWATER",
+          "quantity": 1
+        },
+        {
+          "item": "LUXURYBALL",
+          "quantity": 1
+        },
+        {
+          "item": "BLUESCARF",
+          "quantity": 1
+        },
+        {
+          "item": "LEAFSTONE",
+          "quantity": 1
+        }
+      ],
+      "description": "
+A gift bundle to simulate the grand opening of 
+Hoenn 
+Reloaded
+!"
     }
   ],
   "automation": {
