@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.05.26",
-  "generated_at": "2026-07-05 07:35:33 AM -0400",
+  "generated_at": "2026-07-05 08:18:57 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -290,19 +290,11 @@
       "category_name": "BUNDLES",
       "grants": [
         {
-          "item": "TM115",
-          "quantity": 1
-        },
-        {
           "item": "FRESHWATER",
           "quantity": 1
         },
         {
           "item": "LUXURYBALL",
-          "quantity": 1
-        },
-        {
-          "item": "BLUESCARF",
           "quantity": 1
         },
         {
