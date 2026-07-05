@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.04.26",
-  "generated_at": "2026-07-05 04:48:06 AM -0400",
+  "generated_at": "2026-07-05 04:57:33 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -282,7 +282,7 @@ This is just a regular test bundle to use and see if it's working properly."
       "stock_reset": "never",
       "availability": {},
       "limits": {
-        "one_time": true
+        "one_time": false
       },
       "display": {
         "box_image": "gift"
