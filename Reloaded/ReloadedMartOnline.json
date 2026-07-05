@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.04.26",
-  "generated_at": "2026-07-04 10:14:26 PM -0400",
+  "generated_at": "2026-07-05 12:51:22 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -42,6 +42,20 @@
       ]
     },
     {
+      "id": "bundles",
+      "name": "BUNDLES",
+      "tags": [
+        "bundles"
+      ]
+    },
+    {
+      "id": "poke_balls",
+      "name": "POKE BALLS",
+      "tags": [
+        "poke_balls"
+      ]
+    },
+    {
       "id": "items",
       "name": "ITEMS",
       "tags": [
@@ -53,13 +67,6 @@
       "name": "MEDICINE",
       "tags": [
         "medicine"
-      ]
-    },
-    {
-      "id": "poke_balls",
-      "name": "POKE BALLS",
-      "tags": [
-        "poke_balls"
       ]
     },
     {
@@ -89,13 +96,6 @@
       "tags": [
         "battle_items"
       ]
-    },
-    {
-      "id": "bundles",
-      "name": "BUNDLES",
-      "tags": [
-        "bundles"
-      ]
     }
   ],
   "economy_events": [],
@@ -104,7 +104,7 @@
     "enabled": true,
     "count": 3,
     "discount_min_percent": 10,
-    "discount_max_percent": 25,
+    "discount_max_percent": 30,
     "category_id": "featured",
     "category_name": "FEATURED",
     "pool": "game_items",
@@ -128,7 +128,103 @@
       "display": {},
       "dependencies": {},
       "category_id": "featured",
-      "category_name": "FEATURED"
+      "category_name": "FEATURED",
+      "grants": [],
+      "category_ids": [
+        "featured"
+      ]
+    },
+    {
+      "id": "abilityurge",
+      "kind": "item",
+      "item": "ABILITYURGE",
+      "name": "Ability Urge",
+      "category": "featured",
+      "tags": [],
+      "price": null,
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {},
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_id": "featured",
+      "category_name": "FEATURED",
+      "category_ids": [
+        "featured"
+      ]
+    },
+    {
+      "id": "mystery_box",
+      "kind": "bundle",
+      "name": "Hoenn Healing",
+      "category": "bundles",
+      "tags": [
+        "mystery_box"
+      ],
+      "price": 1,
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {},
+      "limits": {},
+      "display": {
+        "mystery_box": true,
+        "description": "???"
+      },
+      "dependencies": {},
+      "category_id": "bundles",
+      "category_name": "BUNDLES",
+      "grants": [
+        {
+          "item": "POTION",
+          "quantity": 1,
+          "probability": 25,
+          "rarity": "common"
+        },
+        {
+          "item": "SUPERPOTION",
+          "quantity": 1,
+          "probability": 30,
+          "rarity": "uncommon"
+        },
+        {
+          "item": "FULLRESTORE",
+          "quantity": 1,
+          "probability": 4,
+          "rarity": "ultra_rare"
+        },
+        {
+          "item": "ENERGYPOWDER",
+          "quantity": 1,
+          "probability": 15,
+          "rarity": "rare"
+        },
+        {
+          "item": "ANTIDOTE",
+          "quantity": 1,
+          "probability": 25,
+          "rarity": "common"
+        },
+        {
+          "item": "LEFTOVERS",
+          "quantity": 1,
+          "probability": 1,
+          "rarity": "legendary"
+        }
+      ],
+      "description": "Bundle of healing items showing how bundles operate.",
+      "sell_price": 0,
+      "currency": "money",
+      "category_ids": [
+        "bundles"
+      ]
     }
-  ]
+  ],
+  "automation": {
+    "enabled": false,
+    "daily_featured": true,
+    "economy_events": true,
+    "profile_tuning": true,
+    "restocks": true
+  }
 }
