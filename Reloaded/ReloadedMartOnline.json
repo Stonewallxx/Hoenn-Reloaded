@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.04.26",
-  "generated_at": "2026-07-05 12:51:22 AM -0400",
+  "generated_at": "2026-07-05 01:40:01 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -218,6 +218,52 @@
       "category_ids": [
         "bundles"
       ]
+    },
+    {
+      "id": "bundle",
+      "kind": "bundle",
+      "name": "Test Bundle",
+      "category": "bundles",
+      "category_id": "bundles",
+      "category_ids": [
+        "bundles"
+      ],
+      "tags": [
+        "bundle"
+      ],
+      "price": 1,
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {},
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "BUNDLES",
+      "grants": [
+        {
+          "item": "KINGSROCK",
+          "quantity": 1
+        },
+        {
+          "item": "DNAREVERSER",
+          "quantity": 1
+        },
+        {
+          "item": "ARMORFOSSIL",
+          "quantity": 1
+        },
+        {
+          "item": "OLDPENDANT",
+          "quantity": 1
+        },
+        {
+          "item": "METALPOWDER",
+          "quantity": 1
+        }
+      ],
+      "sell_price": 0,
+      "description": "
+This is just a regular test bundle to use and see if it's working properly."
     }
   ],
   "automation": {
