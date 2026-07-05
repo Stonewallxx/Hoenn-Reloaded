@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.04.26",
-  "generated_at": "2026-07-04 09:54:36 PM -0400",
+  "generated_at": "2026-07-04 09:57:01 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -120,7 +120,7 @@
       "tags": [],
       "price": 5000,
       "stock": 50,
-      "stock_reset": "never",
+      "stock_reset": "catalog_version",
       "availability": {},
       "limits": {},
       "display": {},
