@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.05.26",
-  "generated_at": "2026-07-05 07:03:01 AM -0400",
+  "generated_at": "2026-07-05 07:19:45 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -345,5 +345,23 @@
     "economy_events": true,
     "profile_tuning": true,
     "restocks": true
-  }
+  },
+  "promo_codes": [
+    {
+      "id": "promo",
+      "code": "GRAND",
+      "label": "Grand Opening!",
+      "enabled": true,
+      "available_from": "",
+      "available_until": "",
+      "modifier": {
+        "mode": "buy",
+        "type": "percent",
+        "value": -30.0,
+        "entry_id": "service",
+        "category": "",
+        "tag": ""
+      }
+    }
+  ]
 }
