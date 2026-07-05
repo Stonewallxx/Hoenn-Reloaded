@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "catalog_version": "07.04.26",
+  "generated_at": "2026-07-04 09:54:36 PM -0400",
+  "stock_epoch": "default",
+  "banner": {
+    "active": true,
+    "text": "GRAND OPENING!"
+  },
+  "banners": {
+    "reloaded_buy": {
+      "active": true,
+      "text": "GRAND OPENING!"
+    },
+    "reloaded_sell": {
+      "active": true,
+      "text": "GRAND OPENING!"
+    },
+    "vanilla_buy": {
+      "active": true,
+      "text": "WELCOME TO HOENN RELOADED!"
+    },
+    "vanilla_sell": {
+      "active": true,
+      "text": "WELCOME TO HOENN RELOADED!"
+    },
+    "regular_buy": {
+      "active": true,
+      "text": "WELCOME TO HOENN RELOADED!"
+    },
+    "regular_sell": {
+      "active": true,
+      "text": "WELCOME TO HOENN RELOADED!"
+    }
+  },
+  "categories": [
+    {
+      "id": "featured",
+      "name": "FEATURED",
+      "tags": [
+        "featured"
+      ]
+    },
+    {
+      "id": "items",
+      "name": "ITEMS",
+      "tags": [
+        "items"
+      ]
+    },
+    {
+      "id": "medicine",
+      "name": "MEDICINE",
+      "tags": [
+        "medicine"
+      ]
+    },
+    {
+      "id": "poke_balls",
+      "name": "POKE BALLS",
+      "tags": [
+        "poke_balls"
+      ]
+    },
+    {
+      "id": "tms_hms",
+      "name": "TMS & HMS",
+      "tags": [
+        "tms_hms"
+      ]
+    },
+    {
+      "id": "berries",
+      "name": "BERRIES",
+      "tags": [
+        "berries"
+      ]
+    },
+    {
+      "id": "mail",
+      "name": "MAIL",
+      "tags": [
+        "mail"
+      ]
+    },
+    {
+      "id": "battle_items",
+      "name": "BATTLE ITEMS",
+      "tags": [
+        "battle_items"
+      ]
+    },
+    {
+      "id": "bundles",
+      "name": "BUNDLES",
+      "tags": [
+        "bundles"
+      ]
+    }
+  ],
+  "economy_events": [],
+  "profile_tuning": {},
+  "daily_featured": {
+    "enabled": true,
+    "count": 2,
+    "discount_min_percent": 10,
+    "discount_max_percent": 40,
+    "category_id": "featured",
+    "category_name": "FEATURED",
+    "pool": "game_items",
+    "blacklist": []
+  },
+  "entries": [
+    {
+      "id": "brightpowder",
+      "kind": "item",
+      "item": "BRIGHTPOWDER",
+      "name": "Bright Powder",
+      "category": "featured",
+      "tags": [],
+      "price": 5000,
+      "stock": 50,
+      "stock_reset": "never",
+      "availability": {},
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_id": "featured",
+      "category_name": "FEATURED"
+    }
+  ]
+}
