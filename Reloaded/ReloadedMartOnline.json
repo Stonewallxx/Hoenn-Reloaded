@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.05.26",
-  "generated_at": "2026-07-05 07:30:14 AM -0400",
+  "generated_at": "2026-07-05 07:35:33 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -313,7 +313,7 @@
       "description": "A gift bundle to simulate the grand opening of\nHoenn\nReloaded!"
     },
     {
-      "id": "service",
+      "id": "fasthatch",
       "kind": "service",
       "name": "Fast Hatch",
       "category": "featured",
@@ -358,7 +358,7 @@
         "mode": "buy",
         "type": "percent",
         "value": -30.0,
-        "entry_id": "service",
+        "entry_id": "fasthatch",
         "category": "",
         "tag": ""
       }
