@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "catalog_version": "07.05.26",
-  "generated_at": "2026-07-05 08:20:11 AM -0400",
+  "catalog_version": "07.05.26 v1",
+  "generated_at": "2026-07-05 08:23:10 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
