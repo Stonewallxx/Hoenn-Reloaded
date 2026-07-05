@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "catalog_version": "07.04.26",
-  "generated_at": "2026-07-05 05:34:45 AM -0400",
+  "catalog_version": "07.05.26",
+  "generated_at": "2026-07-05 05:53:39 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -262,8 +262,7 @@
         }
       ],
       "sell_price": 0,
-      "description": "
-This is just a regular test bundle to use and see if it's working properly."
+      "description": "This is just a regular test bundle to use and see if it's working properly."
     },
     {
       "id": "gift",
@@ -311,15 +310,13 @@ This is just a regular test bundle to use and see if it's working properly."
           "quantity": 1
         }
       ],
-      "description": "
-A gift bundle to simulate the grand opening of 
-Hoenn 
-Reloaded
-!"
+      "description": "A gift bundle to simulate the grand opening of
+Hoenn
+Reloaded!"
     }
   ],
   "automation": {
-    "enabled": false,
+    "enabled": true,
     "daily_featured": true,
     "economy_events": true,
     "profile_tuning": true,
