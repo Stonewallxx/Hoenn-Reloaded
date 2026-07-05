@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.04.26",
-  "generated_at": "2026-07-04 09:57:01 PM -0400",
+  "generated_at": "2026-07-04 10:06:24 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -102,13 +102,15 @@
   "profile_tuning": {},
   "daily_featured": {
     "enabled": true,
-    "count": 2,
+    "count": 3,
     "discount_min_percent": 10,
-    "discount_max_percent": 40,
+    "discount_max_percent": 25,
     "category_id": "featured",
     "category_name": "FEATURED",
     "pool": "game_items",
-    "blacklist": []
+    "blacklist": [],
+    "stock": null,
+    "stock_reset": "daily"
   },
   "entries": [
     {
