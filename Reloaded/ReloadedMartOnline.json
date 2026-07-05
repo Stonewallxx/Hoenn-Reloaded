@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "catalog_version": "07.05.26",
-  "generated_at": "2026-07-05 06:26:31 AM -0400",
+  "generated_at": "2026-07-05 06:36:27 AM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -311,6 +311,30 @@
         }
       ],
       "description": "A gift bundle to simulate the grand opening of\nHoenn\nReloaded!"
+    },
+    {
+      "id": "service",
+      "kind": "service",
+      "name": "Fast Hatch",
+      "category": "featured",
+      "category_id": "featured",
+      "category_ids": [
+        "featured"
+      ],
+      "tags": [
+        "service"
+      ],
+      "price": 5000,
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {},
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "FEATURED",
+      "description": "We will instantly hatch an egg of your choice.",
+      "sell_price": 0,
+      "currency": "money"
     }
   ],
   "automation": {
