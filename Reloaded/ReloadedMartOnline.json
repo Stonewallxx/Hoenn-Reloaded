@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "catalog_version": "07.05.26 v1",
-  "generated_at": "2026-07-05 08:23:10 AM -0400",
+  "generated_at": "2026-07-15 07:42:17 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -115,6 +115,7 @@
   "entries": [
     {
       "id": "brightpowder",
+      "entry_version": 1,
       "kind": "item",
       "item": "BRIGHTPOWDER",
       "name": "Bright Powder",
@@ -136,6 +137,7 @@
     },
     {
       "id": "abilityurge",
+      "entry_version": 1,
       "kind": "item",
       "item": "ABILITYURGE",
       "name": "Ability Urge",
@@ -156,6 +158,7 @@
     },
     {
       "id": "mystery_box",
+      "entry_version": 1,
       "kind": "bundle",
       "name": "Hoenn Healing",
       "category": "bundles",
@@ -169,46 +172,52 @@
       "limits": {},
       "display": {
         "mystery_box": true,
-        "description": "???"
+        "description": "Contains one possible healing reward."
       },
       "dependencies": {},
       "category_id": "bundles",
       "category_name": "BUNDLES",
       "grants": [
         {
-          "item": "POTION",
+          "type": "item",
+          "id": "POTION",
           "quantity": 1,
-          "probability": 25,
+          "chance": 25,
           "rarity": "common"
         },
         {
-          "item": "SUPERPOTION",
+          "type": "item",
+          "id": "SUPERPOTION",
           "quantity": 1,
-          "probability": 30,
+          "chance": 30,
           "rarity": "uncommon"
         },
         {
-          "item": "FULLRESTORE",
+          "type": "item",
+          "id": "FULLRESTORE",
           "quantity": 1,
-          "probability": 4,
+          "chance": 4,
           "rarity": "ultra_rare"
         },
         {
-          "item": "ENERGYPOWDER",
+          "type": "item",
+          "id": "ENERGYPOWDER",
           "quantity": 1,
-          "probability": 15,
+          "chance": 15,
           "rarity": "rare"
         },
         {
-          "item": "ANTIDOTE",
+          "type": "item",
+          "id": "ANTIDOTE",
           "quantity": 1,
-          "probability": 25,
+          "chance": 25,
           "rarity": "common"
         },
         {
-          "item": "LEFTOVERS",
+          "type": "item",
+          "id": "LEFTOVERS",
           "quantity": 1,
-          "probability": 1,
+          "chance": 1,
           "rarity": "legendary"
         }
       ],
@@ -221,6 +230,7 @@
     },
     {
       "id": "bundle",
+      "entry_version": 1,
       "kind": "bundle",
       "name": "Test Bundle",
       "category": "bundles",
@@ -266,6 +276,7 @@
     },
     {
       "id": "gift",
+      "entry_version": 1,
       "kind": "gift",
       "name": "Grand Opening!",
       "category": "bundles",
@@ -306,6 +317,7 @@
     },
     {
       "id": "fasthatch",
+      "entry_version": 1,
       "kind": "service",
       "name": "Fast Hatch",
       "category": "featured",
