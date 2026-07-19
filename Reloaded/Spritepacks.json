@@ -1,37 +1,38 @@
 {
-  "description": "Hoenn Reloaded Spritepacks. Install the Full Spritepack first, then newer monthly updates as they are released.",
-  "extract_to": ".",
-  "files": [
-    {
-      "id": "full_spritepack_20260718-130703",
-      "name": "Full Spritepack 20260718-130703",
-      "url": "",
-      "updated_at": "2026-07-18T17:52:29.3744581Z",
-      "latest": true,
-      "full": true,
-      "build_id": "20260718-130703",
-      "size": 5187100193,
-      "sha256": "6a4dc0fb11500596e9566dbe4030e3ff32aab794488bcd0ffcb9a8ecad29c4eb",
-      "parts": [
-        {
-          "file": "Hoenn-Reloaded-Full-Spritepack-20260718-130703.zip.001",
-          "url": "https://github.com/Stonewallxx/Hoenn-Reloaded/releases/download/Spritepacks/Hoenn-Reloaded-Full-Spritepack-20260718-130703.zip.001",
-          "size": 1992294400,
-          "sha256": "e03841fe53877ab9f8ef7685cb0290b87072a9a71ceb04bab2d2b2b2e379aa44"
-        },
-        {
-          "file": "Hoenn-Reloaded-Full-Spritepack-20260718-130703.zip.002",
-          "url": "https://github.com/Stonewallxx/Hoenn-Reloaded/releases/download/Spritepacks/Hoenn-Reloaded-Full-Spritepack-20260718-130703.zip.002",
-          "size": 1992294400,
-          "sha256": "fe070a1a293f7d7a1979974e30b24cc31377d7a1c1e58e4ea416491e1bb17dbd"
-        },
-        {
-          "file": "Hoenn-Reloaded-Full-Spritepack-20260718-130703.zip.003",
-          "url": "https://github.com/Stonewallxx/Hoenn-Reloaded/releases/download/Spritepacks/Hoenn-Reloaded-Full-Spritepack-20260718-130703.zip.003",
-          "size": 1202511393,
-          "sha256": "e1f70b4ab779dd858595e51a4bd7079f327c5c621926e60a4529e6aa59687966"
-        }
-      ]
-    }
-  ]
+    "description":  "Hoenn Reloaded Spritepacks. Install the Full Spritepack first, then newer monthly updates as they are released.",
+    "extract_to":  ".",
+    "files":  [
+                  {
+                      "id":  "full_spritepack_20260719-121218",
+                      "name":  "Full Spritepack 1-126",
+                      "url":  "",
+                      "updated_at":  "2026-07-19T17:03:12.5779115Z",
+                      "latest":  true,
+                      "build_id":  "20260719-121218",
+                      "size":  5187099942,
+                      "installed_size":  5835799757,
+                      "sha256":  "b99703d8384e9126f747f0906f96410bb1fcafa35a48d333a62216f9ee4ee9ac",
+                      "full":  true,
+                      "parts":  [
+                                    {
+                                        "file":  "Hoenn-Reloaded-Full-Spritepack-1-126.zip.001",
+                                        "url":  "https://github.com/Stonewallxx/Hoenn-Reloaded/releases/download/Spritepacks/Hoenn-Reloaded-Full-Spritepack-1-126.zip.001",
+                                        "size":  1992294400,
+                                        "sha256":  "9f6b7bee179f4a1c6f73fa2edfb742aa79acfcaaf21389a6a446c9e55243601b"
+                                    },
+                                    {
+                                        "file":  "Hoenn-Reloaded-Full-Spritepack-1-126.zip.002",
+                                        "url":  "https://github.com/Stonewallxx/Hoenn-Reloaded/releases/download/Spritepacks/Hoenn-Reloaded-Full-Spritepack-1-126.zip.002",
+                                        "size":  1992294400,
+                                        "sha256":  "66c668a2708261a59fdeba367cb82acc75b7b7d7b60121ffa86877c6f34a795f"
+                                    },
+                                    {
+                                        "file":  "Hoenn-Reloaded-Full-Spritepack-1-126.zip.003",
+                                        "url":  "https://github.com/Stonewallxx/Hoenn-Reloaded/releases/download/Spritepacks/Hoenn-Reloaded-Full-Spritepack-1-126.zip.003",
+                                        "size":  1202511142,
+                                        "sha256":  "c4bd85ff3c1c0a0f40927189a7abfccf124660cda58902b9e369f89981fe9096"
+                                    }
+                                ]
+                  }
+              ]
 }
