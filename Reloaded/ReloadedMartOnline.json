@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "catalog_version": "07.05.26 v1",
-  "generated_at": "2026-07-15 07:42:17 PM -0400",
+  "generated_at": "2026-07-19 06:37:43 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -103,8 +103,8 @@
   "daily_featured": {
     "enabled": true,
     "count": 3,
-    "discount_min_percent": 10,
-    "discount_max_percent": 30,
+    "discount_min_percent": 5,
+    "discount_max_percent": 50,
     "category_id": "featured",
     "category_name": "FEATURED",
     "pool": "game_items",
@@ -113,49 +113,6 @@
     "stock_reset": "daily"
   },
   "entries": [
-    {
-      "id": "brightpowder",
-      "entry_version": 1,
-      "kind": "item",
-      "item": "BRIGHTPOWDER",
-      "name": "Bright Powder",
-      "category": "featured",
-      "tags": [],
-      "price": 5000,
-      "stock": 50,
-      "stock_reset": "catalog_version",
-      "availability": {},
-      "limits": {},
-      "display": {},
-      "dependencies": {},
-      "category_id": "featured",
-      "category_name": "FEATURED",
-      "grants": [],
-      "category_ids": [
-        "featured"
-      ]
-    },
-    {
-      "id": "abilityurge",
-      "entry_version": 1,
-      "kind": "item",
-      "item": "ABILITYURGE",
-      "name": "Ability Urge",
-      "category": "featured",
-      "tags": [],
-      "price": null,
-      "stock": null,
-      "stock_reset": "never",
-      "availability": {},
-      "limits": {},
-      "display": {},
-      "dependencies": {},
-      "category_id": "featured",
-      "category_name": "FEATURED",
-      "category_ids": [
-        "featured"
-      ]
-    },
     {
       "id": "mystery_box",
       "entry_version": 1,
@@ -343,29 +300,5 @@
       "currency": "money"
     }
   ],
-  "automation": {
-    "enabled": false,
-    "daily_featured": true,
-    "economy_events": true,
-    "profile_tuning": true,
-    "restocks": true
-  },
-  "promo_codes": [
-    {
-      "id": "promo",
-      "code": "GRAND",
-      "label": "Grand Opening!",
-      "enabled": true,
-      "available_from": "2026-07-05 07:27:00",
-      "available_until": "",
-      "modifier": {
-        "mode": "buy",
-        "type": "percent",
-        "value": -30.0,
-        "entry_id": "fasthatch",
-        "category": "",
-        "tag": ""
-      }
-    }
-  ]
+  "promo_codes": []
 }
