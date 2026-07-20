@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "catalog_version": "07.05.26 v1",
-  "generated_at": "2026-07-19 10:55:57 PM -0400",
+  "generated_at": "2026-07-19 11:21:34 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -49,10 +49,10 @@
       ]
     },
     {
-      "id": "poke_balls",
-      "name": "POKE BALLS",
+      "id": "services",
+      "name": "SERVICES",
       "tags": [
-        "poke_balls"
+        "service"
       ]
     },
     {
@@ -70,6 +70,13 @@
       ]
     },
     {
+      "id": "poke_balls",
+      "name": "POKE BALLS",
+      "tags": [
+        "poke_balls"
+      ]
+    },
+    {
       "id": "tms_hms",
       "name": "TMS & HMS",
       "tags": [
@@ -84,13 +91,6 @@
       ]
     },
     {
-      "id": "mail",
-      "name": "MAIL",
-      "tags": [
-        "mail"
-      ]
-    },
-    {
       "id": "battle_items",
       "name": "BATTLE ITEMS",
       "tags": [
@@ -98,10 +98,10 @@
       ]
     },
     {
-      "id": "services",
-      "name": "SERVICES",
+      "id": "mail",
+      "name": "MAIL",
       "tags": [
-        "service"
+        "mail"
       ]
     }
   ],
