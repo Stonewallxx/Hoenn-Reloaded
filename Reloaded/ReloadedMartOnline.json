@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "catalog_version": "07.05.26 v1",
-  "generated_at": "2026-07-19 06:37:43 PM -0400",
+  "generated_at": "2026-07-19 10:55:57 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -96,6 +96,13 @@
       "tags": [
         "battle_items"
       ]
+    },
+    {
+      "id": "services",
+      "name": "SERVICES",
+      "tags": [
+        "service"
+      ]
     }
   ],
   "economy_events": [],
@@ -105,6 +112,7 @@
     "count": 3,
     "discount_min_percent": 5,
     "discount_max_percent": 50,
+    "high_discount_limit": 1,
     "category_id": "featured",
     "category_name": "FEATURED",
     "pool": "game_items",
@@ -273,32 +281,1229 @@
       "description": "A gift bundle to simulate the grand opening of\nHoenn\nReloaded!"
     },
     {
-      "id": "fasthatch",
+      "id": "service",
       "entry_version": 1,
       "kind": "service",
-      "name": "Fast Hatch",
-      "category": "featured",
-      "category_id": "featured",
+      "name": "Instant Hatch",
+      "category": "services",
+      "category_id": "services",
       "category_ids": [
-        "featured"
+        "services"
       ],
       "tags": [
         "service"
       ],
-      "price": 5000,
+      "description": "",
+      "price": 2000,
+      "sell_price": null,
+      "currency": "money",
       "stock": null,
       "stock_reset": "never",
-      "availability": {},
+      "availability": {
+        "active": true
+      },
       "limits": {},
       "display": {
         "service_key": "instant_hatch"
       },
       "dependencies": {},
-      "category_name": "FEATURED",
-      "description": "We will instantly hatch an egg of your choice.",
-      "sell_price": 0,
-      "currency": "money"
+      "category_name": "SERVICES",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "maxrepel",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Max Repel",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "price": null,
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 4,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {
+        "display_policy": ""
+      },
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "MAXREPEL",
+      "description": "",
+      "currency": "money",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "pokeball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Poké Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A device for catching wild Pokémon. It is thrown like a ball at the target. It is designed as a capsule system.",
+      "price": 400,
+      "sell_price": 100,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {},
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "POKEBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "potion",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Potion",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points.",
+      "price": 400,
+      "sell_price": 100,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "POTION",
+      "requires": {},
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "antidote",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Antidote",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A spray-type medicine. It lifts the effect of poison from one Pokémon.",
+      "price": 400,
+      "sell_price": 100,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 1,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "ANTIDOTE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "parlyzheal",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Paralyze Heal",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A spray-type medicine. It eliminates paralysis from a single Pokémon.",
+      "price": 600,
+      "sell_price": 150,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 1,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "PARLYZHEAL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "awakening",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Awakening",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A spray-type medicine. It awakens a Pokémon from the clutches of sleep.",
+      "price": 200,
+      "sell_price": 50,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 1,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "AWAKENING",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "repel",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Repel",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "An item that prevents weak wild Pokémon from appearing for 100 steps after its use.",
+      "price": 600,
+      "sell_price": 150,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "REPEL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "superrepel",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Super Repel",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "An item that prevents weak wild Pokémon from appearing for 200 steps after its use.",
+      "price": 500,
+      "sell_price": 250,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "SUPERREPEL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "escaperope",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Escape Rope",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A long, durable rope. Use it to escape instantly from a cave or a dungeon.",
+      "price": 700,
+      "sell_price": 250,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "ESCAPEROPE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "dnasplicers",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "DNA Splicers",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A splicer that fuses the DNA of any two Pokemon into a single entirely new Pokemon.",
+      "price": 600,
+      "sell_price": 150,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "DNASPLICERS",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "dnareverser",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "DNA Reverser",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A splicer that reverses the DNA of a fused Pokémon to create the inverse fusion.",
+      "price": 600,
+      "sell_price": 150,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {},
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "DNAREVERSER",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "superpotion",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Super Potion",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A spray-type medicine for wounds. It restores the HP of one Pokémon by 50 points.",
+      "price": 1200,
+      "sell_price": 350,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "SUPERPOTION",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "greatball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Great Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball.",
+      "price": 1000,
+      "sell_price": 300,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "GREATBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "fullheal",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Full Heal",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A spray-type medicine. It heals all the status problems of a single Pokémon.",
+      "price": 800,
+      "sell_price": 200,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 3,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "FULLHEAL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "revive",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Revive",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A medicine that revives a fainted Pokémon. It restores half the Pokémon's maximum HP.",
+      "price": 3000,
+      "sell_price": 1000,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "REVIVE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "hyperpotion",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Hyper Potion",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A spray-type medicine for wounds. It restores the HP of one Pokémon by 200 points.",
+      "price": 2500,
+      "sell_price": 750,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 4,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "HYPERPOTION",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "ultraball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Ultra Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball.",
+      "price": 1600,
+      "sell_price": 400,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 4,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "ULTRABALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "netball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Net Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon.",
+      "price": 1500,
+      "sell_price": 500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 3,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "NETBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "diveball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Dive Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A somewhat different Poké Ball that works especially well on Pokémon that live underwater.",
+      "price": 1500,
+      "sell_price": 500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 3,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "DIVEBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "nestball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Nest Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A somewhat different Poké Ball that works especially well on weaker Pokémon in the wild.",
+      "price": 800,
+      "sell_price": 150,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 3,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "NESTBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "repeatball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Repeat Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught.",
+      "price": 1500,
+      "sell_price": 500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 3,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "REPEATBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "timerball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Timer Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A somewhat different Ball that becomes progressively better the more turns there are in a battle.",
+      "price": 1500,
+      "sell_price": 500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 3,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "TIMERBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "maxpotion",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Max Potion",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A spray-type medicine for wounds. It completely restores the HP of a single Pokémon.",
+      "price": 3500,
+      "sell_price": 1250,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 6,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "MAXPOTION",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "fullrestore",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Full Restore",
+      "category": "medicine",
+      "category_id": "medicine",
+      "category_ids": [
+        "medicine"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A medicine that fully restores the HP and heals any status problems of a single Pokémon.",
+      "price": 5000,
+      "sell_price": 1500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 6,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "MEDICINE",
+      "item": "FULLRESTORE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "quickball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Quick Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A somewhat different Poké Ball that provides a better catch rate if used at the start of a wild encounter.",
+      "price": 2000,
+      "sell_price": 500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 4,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "QUICKBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "duskball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Dusk Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A somewhat different Poké Ball that makes it easier to catch wild Pokémon at night or in dark places like caves.",
+      "price": 2000,
+      "sell_price": 500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 4,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "DUSKBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "luxuryball",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Luxury Ball",
+      "category": "poke_balls",
+      "category_id": "poke_balls",
+      "category_ids": [
+        "poke_balls"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.",
+      "price": 2000,
+      "sell_price": 500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 4,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "POKE BALLS",
+      "item": "LUXURYBALL",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "firestone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Fire Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It is colored orange.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "FIRESTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "thunderstone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Thunder Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It has a thunderbolt pattern.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "THUNDERSTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "waterstone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Water Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It is a clear, light blue.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "WATERSTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "leafstone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Leaf Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It has a leaf pattern.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "LEAFSTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "moonstone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Moon Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It is as black as the night sky.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "MOONSTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "sunstone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Sun Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It is as red as the sun.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "SUNSTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "duskstone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Dusk Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It is as dark as dark can be.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "DUSKSTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "dawnstone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Dawn Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It sparkles like eyes.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "DAWNSTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "shinystone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Shiny Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It shines with a dazzling light.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "SHINYSTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "icestone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Ice Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It is made out of ice.",
+      "price": 5000,
+      "sell_price": 2500,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "ICESTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "magnetstone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Magnet Stone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "A peculiar stone that makes certain species of Pokémon evolve. It has magnetic properties.",
+      "price": 2100,
+      "sell_price": 1050,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 2,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "MAGNETSTONE",
+      "online_policy": "fresh_required"
+    },
+    {
+      "id": "everstone",
+      "entry_version": 1,
+      "kind": "item",
+      "name": "Everstone",
+      "category": "items",
+      "category_id": "items",
+      "category_ids": [
+        "items"
+      ],
+      "tags": [
+        "item"
+      ],
+      "description": "An item to be held by a Pokémon. The Pokémon holding this peculiar stone is prevented from evolving.",
+      "price": 2000,
+      "sell_price": 150,
+      "currency": "money",
+      "stock": null,
+      "stock_reset": "never",
+      "availability": {
+        "active": true,
+        "min_badges": 5,
+        "visible_when_locked": false
+      },
+      "limits": {},
+      "display": {},
+      "dependencies": {},
+      "category_name": "ITEMS",
+      "item": "EVERSTONE",
+      "online_policy": "fresh_required"
     }
-  ],
-  "promo_codes": []
+  ]
 }
