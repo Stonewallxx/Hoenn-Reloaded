@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "catalog_version": "07.05.26 v1",
-  "generated_at": "2026-07-20 08:39:31 PM -0400",
+  "generated_at": "2026-07-20 08:41:19 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -46,13 +46,6 @@
       "name": "BUNDLES",
       "tags": [
         "bundles"
-      ]
-    },
-    {
-      "id": "services",
-      "name": "SERVICES",
-      "tags": [
-        "service"
       ]
     },
     {
@@ -102,6 +95,13 @@
       "name": "MAIL",
       "tags": [
         "mail"
+      ]
+    },
+    {
+      "id": "services",
+      "name": "SERVICES",
+      "tags": [
+        "service"
       ]
     }
   ],
