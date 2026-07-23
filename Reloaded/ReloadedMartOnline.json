@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "catalog_version": "07.05.26 v1",
-  "generated_at": "2026-07-20 08:41:19 PM -0400",
+  "catalog_version": "07.23.26 v2",
+  "generated_at": "2026-07-23 03:35:24 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -105,7 +105,6 @@
       ]
     }
   ],
-  "profile_tuning": {},
   "daily_featured": {
     "enabled": true,
     "count": 3,
@@ -194,55 +193,8 @@
       "online_policy": "fresh_required"
     },
     {
-      "id": "bundle",
-      "entry_version": 1,
-      "kind": "bundle",
-      "name": "Test Bundle",
-      "category": "bundles",
-      "category_id": "bundles",
-      "category_ids": [
-        "bundles"
-      ],
-      "tags": [
-        "bundle"
-      ],
-      "price": 1,
-      "stock": null,
-      "stock_reset": "never",
-      "availability": {},
-      "limits": {},
-      "display": {},
-      "dependencies": {},
-      "category_name": "BUNDLES",
-      "grants": [
-        {
-          "item": "KINGSROCK",
-          "quantity": 1
-        },
-        {
-          "item": "DNAREVERSER",
-          "quantity": 1
-        },
-        {
-          "item": "ARMORFOSSIL",
-          "quantity": 1
-        },
-        {
-          "item": "OLDPENDANT",
-          "quantity": 1
-        },
-        {
-          "item": "METALPOWDER",
-          "quantity": 1
-        }
-      ],
-      "sell_price": 0,
-      "description": "This is just a regular test bundle to use and see if it's working properly.",
-      "online_policy": "fresh_required"
-    },
-    {
-      "id": "gift",
-      "entry_version": 1,
+      "id": "grandopening",
+      "entry_version": 3,
       "kind": "gift",
       "name": "Grand Opening!",
       "category": "bundles",
@@ -254,11 +206,16 @@
         "gift"
       ],
       "price": 0,
-      "stock": null,
+      "stock": 1,
       "stock_reset": "never",
-      "availability": {},
+      "availability": {
+        "active": true
+      },
       "limits": {
-        "one_time": false
+        "one_time": true,
+        "max_per_purchase": 1,
+        "max_per_save": 1,
+        "max_per_day": 1
       },
       "display": {
         "box_image": "gift"
@@ -267,20 +224,50 @@
       "category_name": "BUNDLES",
       "grants": [
         {
-          "item": "FRESHWATER",
-          "quantity": 1
+          "level": 5,
+          "generate_moves": true,
+          "delivery": "either",
+          "distribution_id": "grandopening:eevee",
+          "distribution_version": 1,
+          "duplicate_policy": "reject",
+          "evolution_policy": "allow",
+          "untradeable": false,
+          "quantity": 1,
+          "species_mode": "single",
+          "species": "EEVEE",
+          "type": "pokemon",
+          "gender": "random",
+          "shiny": true,
+          "egg": true,
+          "nature": "random",
+          "poke_ball": "POKEBALL",
+          "happiness": 0,
+          "perfect_ivs": 1
         },
         {
-          "item": "LUXURYBALL",
-          "quantity": 1
+          "currency": "cosmetics_money",
+          "amount": 10,
+          "type": "currency"
         },
         {
-          "item": "LEAFSTONE",
+          "type": "item",
+          "id": "POTION",
+          "quantity": 5
+        },
+        {
+          "type": "item",
+          "id": "GREATBALL",
+          "quantity": 3
+        },
+        {
+          "type": "pokevial_refill",
           "quantity": 1
         }
       ],
-      "description": "A gift bundle to simulate the grand opening of\nHoenn\nReloaded!",
-      "online_policy": "fresh_required"
+      "description": "A gift bundle to celebrate the initial release of Hoenn Reloaded!",
+      "online_policy": "fresh_required",
+      "currency": "money",
+      "sell_price": 0
     },
     {
       "id": "service",
@@ -1508,337 +1495,5 @@
       "online_policy": "fresh_required"
     }
   ],
-  "economy_events": [
-    {
-      "id": "medicine_festival_curated",
-      "label": "Medicine Festival",
-      "description": "Traditional remedies, drinks, and regional treats are temporarily stocked.",
-      "priority": 0,
-      "pricing_rules": [
-        {
-          "id": "medicine_festival_pricing",
-          "label": "Medicine Festival",
-          "operation": "discount_percent",
-          "value": 20,
-          "priority": 0,
-          "mode": "buy",
-          "tags": [
-            "event_template:medicine_festival"
-          ],
-          "exclusions": {}
-        }
-      ],
-      "temporary_entries": [
-        {
-          "id": "medicine_festival:energypowder",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "ENERGYPOWDER",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:healpowder",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "HEALPOWDER",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:energyroot",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "ENERGYROOT",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:revivalherb",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "REVIVALHERB",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:lavacookie",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "LAVACOOKIE",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:oldgateau",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "OLDGATEAU",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:casteliacone",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "CASTELIACONE",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:ragecandybar",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "RAGECANDYBAR",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:moomoomilk",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "MOOMOOMILK",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:freshwater",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "FRESHWATER",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:sodapop",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "SODAPOP",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:lemonade",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "LEMONADE",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:berryjuice",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "BERRYJUICE",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:sweetheart",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "SWEETHEART",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        },
-        {
-          "id": "medicine_festival:sacredash",
-          "entry_version": 1,
-          "kind": "item",
-          "item": "SACREDASH",
-          "category": "medicine",
-          "category_id": "medicine",
-          "category_ids": [
-            "medicine"
-          ],
-          "category_name": "MEDICINE",
-          "tags": [
-            "economy_event",
-            "event_template:medicine_festival"
-          ],
-          "currency": "money",
-          "price": null,
-          "stock": null,
-          "stock_reset": "never"
-        }
-      ],
-      "display": {
-        "banner_text": "Medicine Festival is active!",
-        "description": "Traditional remedies, drinks, and regional treats are temporarily stocked.",
-        "show_countdown": true
-      },
-      "event_type": "curated",
-      "enabled": true,
-      "available_from": "2026-07-20 20:12:00",
-      "available_until": "2026-07-22 20:13:00"
-    }
-  ]
+  "economy_events": []
 }
