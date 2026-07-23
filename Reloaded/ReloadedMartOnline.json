@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "catalog_version": "07.23.26 v3",
-  "generated_at": "2026-07-23 04:32:31 PM -0400",
+  "catalog_version": "07.23.26 v4",
+  "generated_at": "2026-07-23 06:02:21 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -194,7 +194,7 @@
     },
     {
       "id": "grandopening",
-      "entry_version": 4,
+      "entry_version": 5,
       "kind": "gift",
       "name": "Grand Opening!",
       "category": "bundles",
@@ -238,7 +238,7 @@
           "type": "pokemon",
           "gender": "random",
           "shiny": true,
-          "egg": true,
+          "egg": false,
           "nature": "random",
           "poke_ball": "POKEBALL",
           "happiness": 0,
