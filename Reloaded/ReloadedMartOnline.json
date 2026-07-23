@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "catalog_version": "07.23.26 v2",
-  "generated_at": "2026-07-23 03:35:24 PM -0400",
+  "catalog_version": "07.23.26 v3",
+  "generated_at": "2026-07-23 04:32:31 PM -0400",
   "stock_epoch": "default",
   "banner": {
     "active": true,
@@ -194,7 +194,7 @@
     },
     {
       "id": "grandopening",
-      "entry_version": 3,
+      "entry_version": 4,
       "kind": "gift",
       "name": "Grand Opening!",
       "category": "bundles",
@@ -260,7 +260,8 @@
           "quantity": 3
         },
         {
-          "type": "pokevial_refill",
+          "type": "item",
+          "id": "POKEVIAL_REFILL",
           "quantity": 1
         }
       ],
